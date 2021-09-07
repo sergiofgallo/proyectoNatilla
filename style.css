@@ -1,0 +1,156 @@
+/* 
+1. Posicion
+2. Modelo de caja 
+3. Tipografia
+4. Visual
+5. Otros
+*/
+
+:root {
+   /* color */
+   --color-primario: #b188c2;
+   --color-secundario: #f7907e;
+   --color-secundario-claro: #ffecec;
+}
+
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: "Baloo Tammudu 2", cursive;
+}
+
+header {
+   width: 100%;
+   height: 70px;
+   background-color: #fff;
+   font-size: 2rem;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: var(--color-secundario-claro) solid 0.5rem;
+}
+
+.header__figure {
+   width: 10rem;
+   height: 100%;
+   margin-left: 0.5rem;
+}
+.header__figure img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.header__nav ul {
+   display: flex;
+   height: 100%;
+   min-width: 31.5rem;
+   flex-wrap: wrap;
+   list-style: none;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.header__nav ul a {
+   text-decoration: none;
+   color: var(--color-primario);
+   /* color: #f7907e; */
+   margin-right: 1.8rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.header__nav ul a:hover {
+   color: #caa6d8;
+}
+
+.main__section1 {
+   width: 100%;
+   min-width: 320px;
+   height: 30rem;
+   border-bottom: var(--color-secundario-claro) solid 0.5rem;
+}
+
+.main__section1 figure {
+   width: 100%;
+   height: 100%;
+}
+
+.main__section1 img {
+   width: 100%;
+   height: 80%;
+   margin: 2.4rem 0;
+   object-fit: cover;
+}
+
+.main__section2-title {
+   margin-top: 1.8rem;
+   text-align: center;
+}
+
+.main__section2-title h2 {
+   font-size: 2.3rem;
+   font-weight: 600;
+   color: var(--color-secundario);
+}
+
+.main__section2-brochure {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.main__section2 .products {
+   min-width: 320px;
+   max-width: 35rem;
+   min-height: 40rem;
+   max-height: 60rem;
+   padding: 2rem;
+   text-align: center;
+}
+
+.main__section2 .products img {
+   width: 90%;
+   min-width: 20.6rem;
+   max-width: 40rem;
+   min-height: 20rem;
+   max-height: 30rem;
+   object-fit: contain;
+}
+
+.main__section2 .products figcaption,
+p {
+   font-size: 1.8rem;
+}
+
+.footer-body {
+   width: 100%;
+   min-height: 6rem;
+   background-color: var(--color-secundario-claro);
+}
+
+.footer-body__nav ul {
+   padding: 2rem 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+}
+
+.footer-body__nav ul li {
+   list-style: none;
+   width: 20rem;
+   margin: 0 1rem;
+}
+
+.footer-body__nav a {
+   text-decoration: none;
+   color: var(--color-primario);
+   font-size: 1.8rem;
+}
